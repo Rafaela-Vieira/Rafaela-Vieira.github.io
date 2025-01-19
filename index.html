@@ -1,101 +1,38 @@
-
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-<title>CSS Template</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
 
-/* Style the header */
-header {
-  background-color: #666;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-  color: white;
-}
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
 
-/* Create two columns/boxes that floats next to each other */
-nav {
-  float: left;
-  width: 30%;
-  height: 300px; /* only for demonstration, should be removed */
-  background: #ccc;
-  padding: 20px;
-}
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/">
 
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
 
-article {
-  float: left;
-  padding: 20px;
-  width: 70%;
-  background-color: #f1f1f1;
-  height: 300px; /* only for demonstration, should be removed */
-}
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="myapp">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
-/* Clear floats after the columns */
-section::after {
-  content: "";
-  display: table;
-  clear: both;
-}
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
 
-/* Style the footer */
-footer {
-  background-color: #777;
-  padding: 10px;
-  text-align: center;
-  color: white;
-}
-
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
-}
-</style>
+  <title>myapp</title>
+  <link rel="manifest" href="manifest.json">
 </head>
 <body>
-
-<h2>Curiosidades</h2>
-
-<header>
-  <h2>Santa Maria do Oeste</h2>
-</header>
-
-<section>
-  <nav>
-    <ul>
-      <li><a href="#">Santa Maria do Oeste</a></li>
-      <li><a href="#">Paraná</a></li>
-      <li><a href="#">Brasil</a></li>
-    </ul>
-  </nav>
-  
-  <article>
-    <h1>Santa Maria do Oeste</h1>
-    <p>Santa Maria do Oeste é um município brasileiro do estado do Paraná. Sua população estimada em 2004 era de 13.705 habitantes.</p>
-    <p>Apresenta altitude de 1.049 metros e área terrestre 845,530 km². Seu território foi desmembrado do município de Pitanga em 11 de julho de 1990 e instalado em 1 de janeiro de 1993.</p>
-  </article>
-</section>
-
-<footer>
-  <p>Footer</p>
-</footer>
-
+  <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
